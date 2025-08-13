@@ -1,9 +1,9 @@
 import { Hono } from 'hono'
+import { Routes } from './routes';
 
-const app = new Hono()
+const app = new Hono().basePath('/api');
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+// Posts Routes
+app.route('/posts', Routes)
 
 export default app
