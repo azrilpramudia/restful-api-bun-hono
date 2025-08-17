@@ -1,4 +1,5 @@
-To install dependencies:
+# Restful API Bun + Hono
+## To install dependencies:
 ```sh
 bun install
 ```
